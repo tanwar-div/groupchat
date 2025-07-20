@@ -1,0 +1,22 @@
+body {
+    background-image: url("/images/loginbackground.png");
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: "gg sans Normal", serif;
+}
+
+label{
+    font-size: 12px;
+    color: rgb(181, 186, 193);
+    font-weight: 700;
+}
+.input-bar{
+    font-size: 16px;
+    color: rgb(219, 222, 225);
+    width: 100%;
+    font-weight: 400;
+    background-color: rgb(30, 31, 34);
+    height: 40px;
+}

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ES2015",
+    "module": "ES2015",
+    "alwaysStrict": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "outDir": "../js",
+    "lib": [
+      "ES2015",
+      "dom",
+      "ES2016.Array.Include",
+    ]
+  }
+}

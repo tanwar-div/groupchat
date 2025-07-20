@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="/webjars/bootstrap/5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/signuppage.css">
+    <link href="https://fonts.cdnfonts.com/css/gg-sans-2" rel="stylesheet">
+</head>
+<body>
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="container d-flex flex-column justify-content-evenly w-50 h-75" style="background-color: rgb(49, 51, 56)">
+        <h1 class="pt-2" style="font-size: 24px;text-align: center;font-weight: 600">Create an account</h1>
+        <form class="h-75 d-flex flex-column justify-content-evenly" action="#" th:action="@{/signup}" th:object="${user}" method="post">
+            <div class="container">
+                <div><label for="email">EMAIL</label></div>
+                <input id="email" class="input-bar">
+            </div>
+            <div class="container">
+                <div><label for="display-name">DISPLAY NAME</label></div>
+                <input id="display-name" class="input-bar">
+            </div>
+            <div class="container">
+                <div><label for="username">USERNAME</label></div>
+                <input th:field="*{username}" id="username" class="input-bar">
+            </div>
+            <div class="container">
+                <div><label for="password">PASSWORD</label></div>
+                <input th:field="*{password}" id="password" class="input-bar">
+            </div>
+            <div class="container">
+                <div><label>DATE OF BIRTH</label></div>
+                <div class="d-flex justify-content-evenly">
+                    <input placeholder="Month" class="input-bar rounded-1">
+                    <input placeholder="Day" class="input-bar mx-2">
+                    <input placeholder="Year" class="input-bar">
+                </div>
+            </div>
+            <div class="container pt-5">
+                <button class="btn btn-primary w-100" style="height: 40px">Continue</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

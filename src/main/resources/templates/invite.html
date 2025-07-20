@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src="/webjars/jquery/3.6.4/jquery.min.js"></script>
+    <link href="/css/invitepage.css" rel="stylesheet">
+    <link href="/webjars/bootstrap/5.2.3/css/bootstrap.min.css" rel="stylesheet">
+    <script type="module" src="/js/invitepage.js"></script>
+</head>
+<body>
+<div class="h-100 d-flex align-items-center justify-content-center">
+    <div class="container-sm text-white d-flex flex-column align-items-center justify-content-evenly"
+         style="width: 416px;height: 275px; background-color: rgb(49, 51, 56)">
+        <div class="circle pb-3" style="width: 80px; height: 80px"></div>
+        <div style="color: rgb(181, 186, 193)"><span th:text="${username}"></span> <span> invited you to join</span>
+        </div>
+        <div style="font-size: 24px;font-weight: 600"><span th:text="${servername}"></span> <span> server</span></div>
+        <div>
+            <span>1 Online</span>
+            <span>1 Member</span>
+        </div>
+        <button id="accept-invite" th:attr="serverid=${serverid}" class="btn btn-primary d-block pt-2 w-75">
+            Accept Invite
+        </button>
+    </div>
+</div>
+
+<script type="text/javascript" src="/webjars/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+</body>
+</html>
