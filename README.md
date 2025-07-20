@@ -1,14 +1,3 @@
-# Discord Clone
-
-This program emulates some of the functionalities of the well known app Discord. This program is purely for my
-educational benefit and does not feature every Discord functionality that the **real** Discord has to offer
-
-![img.png](img/img.png)
-![img_1.png](img/img_1.png)
-![tempsnip.png](img/tempsnip.png)
-![tempsnip_1.png](img/tempsnip_1.png)
-![tempsnip_2.png](img/tempsnip_2.png)
-
 ## How it works?
 
 ### The Code
